@@ -1,0 +1,42 @@
+[[Model]]
+    (((((Model(linear, prefix='bkg_') + Model(lorentzian, prefix='lz1_')) + Model(lorentzian, prefix='lz2_')) + Model(lorentzian, prefix='lz3_')) + Model(lorentzian, prefix='lz4_')) + Model(lorentzian, prefix='lz5_'))
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 3553
+    # data points      = 1060
+    # variables        = 17
+    chi-square         = 0.18637242
+    reduced chi-square = 1.7869e-04
+    Akaike info crit   = -9130.79449
+    Bayesian info crit = -9046.37208
+    R-squared          = 0.98832376
+##  Warning: uncertainties could not be estimated:
+    lz5_sigma:      at boundary
+[[Variables]]
+    bkg_slope:     -2.9757e-06 (init = 1)
+    bkg_intercept:  0.08832711 (init = 0)
+    lz1_amplitude:  23.9897821 (init = 0.05)
+    lz1_center:     1383.63188 (init = 1344.981)
+    lz1_sigma:      130.648524 (init = 0.5)
+    lz1_fwhm:       261.297048 == '2.0000000*lz1_sigma'
+    lz1_height:     0.05844831 == '0.3183099*lz1_amplitude/max(1e-15, lz1_sigma)'
+    lz2_amplitude:  24.0009735 (init = 0.05)
+    lz2_center:     1587.00780 (init = 1587.817)
+    lz2_sigma:      11.3815715 (init = 0.5)
+    lz2_fwhm:       22.7631431 == '2.0000000*lz2_sigma'
+    lz2_height:     0.67123837 == '0.3183099*lz2_amplitude/max(1e-15, lz2_sigma)'
+    lz3_amplitude:  4.90689440 (init = 0.05)
+    lz3_center:     2455.60449 (init = 2449.233)
+    lz3_sigma:      26.3214838 (init = 0.5)
+    lz3_fwhm:       52.6429677 == '2.0000000*lz3_sigma'
+    lz3_height:     0.05933986 == '0.3183099*lz3_amplitude/max(1e-15, lz3_sigma)'
+    lz4_amplitude:  62.6245000 (init = 0.05)
+    lz4_center:     2679.38032 (init = 2677.216)
+    lz4_sigma:      19.9677214 (init = 0.5)
+    lz4_fwhm:       39.9354428 == '2.0000000*lz4_sigma'
+    lz4_height:     0.99831112 == '0.3183099*lz4_amplitude/max(1e-15, lz4_sigma)'
+    lz5_amplitude: -0.05747471 (init = 0.05)
+    lz5_center:     5577.50952 (init = 3238.049)
+    lz5_sigma:      7.0546e-12 (init = 0.5)
+    lz5_fwhm:       1.4109e-11 == '2.0000000*lz5_sigma'
+    lz5_height:    -2.5933e+09 == '0.3183099*lz5_amplitude/max(1e-15, lz5_sigma)'

@@ -1,0 +1,41 @@
+[[Model]]
+    ((((Model(linear, prefix='bkg_') + Model(lorentzian, prefix='lz1_')) + Model(lorentzian, prefix='lz2_')) + Model(lorentzian, prefix='lz3_')) + Model(lorentzian, prefix='lz4_'))
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 2506
+    # data points      = 1060
+    # variables        = 14
+    chi-square         = 0.16008192
+    reduced chi-square = 1.5304e-04
+    Akaike info crit   = -9297.97940
+    Bayesian info crit = -9228.45506
+    R-squared          = 0.98698602
+[[Variables]]
+    bkg_slope:      2.7089e-06 +/- 5.6497e-07 (20.86%) (init = 1)
+    bkg_intercept:  0.09615407 +/- 0.00134465 (1.40%) (init = 0)
+    lz1_amplitude:  12.3800272 +/- 0.20535021 (1.66%) (init = 0.05)
+    lz1_center:     1584.68181 +/- 0.12587072 (0.01%) (init = 1585.242)
+    lz1_sigma:      7.88583392 +/- 0.18147081 (2.30%) (init = 0.5)
+    lz1_fwhm:       15.7716678 +/- 0.36294162 (2.30%) == '2.0000000*lz1_sigma'
+    lz1_height:     0.49971699 +/- 0.00797619 (1.60%) == '0.3183099*lz1_amplitude/max(1e-15, lz1_sigma)'
+    lz2_amplitude:  2.70872568 +/- 0.29524885 (10.90%) (init = 0.05)
+    lz2_center:     2457.35579 +/- 1.82934046 (0.07%) (init = 2456.171)
+    lz2_sigma:      17.6768505 +/- 2.65517344 (15.02%) (init = 0.5)
+    lz2_fwhm:       35.3537010 +/- 5.31034689 (15.02%) == '2.0000000*lz2_sigma'
+    lz2_height:     0.04877646 +/- 0.00504894 (10.35%) == '0.3183099*lz2_amplitude/max(1e-15, lz2_sigma)'
+    lz3_amplitude:  49.5233860 +/- 0.26888319 (0.54%) (init = 0.05)
+    lz3_center:     2675.63444 +/- 0.07699566 (0.00%) (init = 2674.969)
+    lz3_sigma:      14.9833633 +/- 0.11192723 (0.75%) (init = 0.5)
+    lz3_fwhm:       29.9667266 +/- 0.22385446 (0.75%) == '2.0000000*lz3_sigma'
+    lz3_height:     1.05208582 +/- 0.00540718 (0.51%) == '0.3183099*lz3_amplitude/max(1e-15, lz3_sigma)'
+    lz4_amplitude:  1.28354750 +/- 0.18436855 (14.36%) (init = 0.05)
+    lz4_center:     3243.51213 +/- 1.00444081 (0.03%) (init = 3246.393)
+    lz4_sigma:      7.45453471 +/- 1.46681345 (19.68%) (init = 0.5)
+    lz4_fwhm:       14.9090694 +/- 2.93362691 (19.68%) == '2.0000000*lz4_sigma'
+    lz4_height:     0.05480770 +/- 0.00738509 (13.47%) == '0.3183099*lz4_amplitude/max(1e-15, lz4_sigma)'
+[[Correlations]] (unreported correlations are < 0.500)
+    C(bkg_slope, bkg_intercept) = -0.9470
+    C(lz4_amplitude, lz4_sigma) = +0.7287
+    C(lz3_amplitude, lz3_sigma) = +0.7257
+    C(lz2_amplitude, lz2_sigma) = +0.7246
+    C(lz1_amplitude, lz1_sigma) = +0.7204
