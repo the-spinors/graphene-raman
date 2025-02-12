@@ -1,0 +1,162 @@
+[[Model]]
+    (((((((((((((((((((((((((((((Model(linear, prefix='bkg_') + Model(lorentzian, prefix='lz1_')) + Model(lorentzian, prefix='lz2_')) + Model(lorentzian, prefix='lz3_')) + Model(lorentzian, prefix='lz4_')) + Model(lorentzian, prefix='lz5_')) + Model(lorentzian, prefix='lz6_')) + Model(lorentzian, prefix='lz7_')) + Model(lorentzian, prefix='lz8_')) + Model(lorentzian, prefix='lz9_')) + Model(lorentzian, prefix='lz10_')) + Model(lorentzian, prefix='lz11_')) + Model(lorentzian, prefix='lz12_')) + Model(lorentzian, prefix='lz13_')) + Model(lorentzian, prefix='lz14_')) + Model(lorentzian, prefix='lz15_')) + Model(lorentzian, prefix='lz16_')) + Model(lorentzian, prefix='lz17_')) + Model(lorentzian, prefix='lz18_')) + Model(lorentzian, prefix='lz19_')) + Model(lorentzian, prefix='lz20_')) + Model(lorentzian, prefix='lz21_')) + Model(lorentzian, prefix='lz22_')) + Model(lorentzian, prefix='lz23_')) + Model(lorentzian, prefix='lz24_')) + Model(lorentzian, prefix='lz25_')) + Model(lorentzian, prefix='lz26_')) + Model(lorentzian, prefix='lz27_')) + Model(lorentzian, prefix='lz28_')) + Model(lorentzian, prefix='lz29_'))
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 29755
+    # data points      = 1060
+    # variables        = 89
+    chi-square         = 0.16910499
+    reduced chi-square = 1.7416e-04
+    Akaike info crit   = -9089.85529
+    Bayesian info crit = -8647.87914
+    R-squared          = 0.99269318
+##  Warning: uncertainties could not be estimated:
+    lz28_sigma:      at boundary
+[[Variables]]
+    bkg_slope:      -1.5241e-04 (init = 1)
+    bkg_intercept:   0.63536069 (init = 0)
+    lz1_amplitude:  -82.5085650 (init = 0.05)
+    lz1_center:      1142.96419 (init = 1021.05)
+    lz1_sigma:       149.185880 (init = 0.5)
+    lz1_fwhm:        298.371760 == '2.0000000*lz1_sigma'
+    lz1_height:     -0.17604409 == '0.3183099*lz1_amplitude/max(1e-15, lz1_sigma)'
+    lz2_amplitude:  -0.62617098 (init = 0.05)
+    lz2_center:      1097.28339 (init = 1078.623)
+    lz2_sigma:       7.18351833 (init = 0.5)
+    lz2_fwhm:        14.3670367 == '2.0000000*lz2_sigma'
+    lz2_height:     -0.02774635 == '0.3183099*lz2_amplitude/max(1e-15, lz2_sigma)'
+    lz3_amplitude:  -233.073523 (init = 0.05)
+    lz3_center:      916.075366 (init = 1214.18)
+    lz3_sigma:       56.1498408 (init = 0.5)
+    lz3_fwhm:        112.299682 == '2.0000000*lz3_sigma'
+    lz3_height:     -1.32127908 == '0.3183099*lz3_amplitude/max(1e-15, lz3_sigma)'
+    lz4_amplitude:   106.950345 (init = 0.05)
+    lz4_center:      1601.35918 (init = 1350.278)
+    lz4_sigma:       130.764378 (init = 0.5)
+    lz4_fwhm:        261.528756 == '2.0000000*lz4_sigma'
+    lz4_height:      0.26034119 == '0.3183099*lz4_amplitude/max(1e-15, lz4_sigma)'
+    lz5_amplitude:   8.54458388 (init = 0.05)
+    lz5_center:      1610.69153 (init = 1465.969)
+    lz5_sigma:       21.7261856 (init = 0.5)
+    lz5_fwhm:        43.4523711 == '2.0000000*lz5_sigma'
+    lz5_height:      0.12518652 == '0.3183099*lz5_amplitude/max(1e-15, lz5_sigma)'
+    lz6_amplitude:   42.7235607 (init = 0.05)
+    lz6_center:      1350.61227 (init = 1577.515)
+    lz6_sigma:       68.3657022 (init = 0.5)
+    lz6_fwhm:        136.731404 == '2.0000000*lz6_sigma'
+    lz6_height:      0.19892039 == '0.3183099*lz6_amplitude/max(1e-15, lz6_sigma)'
+    lz7_amplitude:   21.0222988 (init = 0.05)
+    lz7_center:      1578.52488 (init = 1646.802)
+    lz7_sigma:       19.6712583 (init = 0.5)
+    lz7_fwhm:        39.3425166 == '2.0000000*lz7_sigma'
+    lz7_height:      0.34017172 == '0.3183099*lz7_amplitude/max(1e-15, lz7_sigma)'
+    lz8_amplitude:  -95.1305583 (init = 0.05)
+    lz8_center:      1676.19256 (init = 1806.253)
+    lz8_sigma:       109.693469 (init = 0.5)
+    lz8_fwhm:        219.386937 == '2.0000000*lz8_sigma'
+    lz8_height:     -0.27605106 == '0.3183099*lz8_amplitude/max(1e-15, lz8_sigma)'
+    lz9_amplitude:  -2.36162581 (init = 0.05)
+    lz9_center:      1763.72730 (init = 1831.281)
+    lz9_sigma:       23.1399417 (init = 0.5)
+    lz9_fwhm:        46.2798834 == '2.0000000*lz9_sigma'
+    lz9_height:     -0.03248620 == '0.3183099*lz9_amplitude/max(1e-15, lz9_sigma)'
+    lz10_amplitude: -0.20882458 (init = 0.05)
+    lz10_center:     1796.05805 (init = 1876.14)
+    lz10_sigma:      2.30840501 (init = 0.5)
+    lz10_fwhm:       4.61681003 == '2.0000000*lz10_sigma'
+    lz10_height:    -0.02879518 == '0.3183099*lz10_amplitude/max(1e-15, lz10_sigma)'
+    lz11_amplitude: -5.89629720 (init = 0.05)
+    lz11_center:     1837.51636 (init = 1945.433)
+    lz11_sigma:      40.7169146 (init = 0.5)
+    lz11_fwhm:       81.4338292 == '2.0000000*lz11_sigma'
+    lz11_height:    -0.04609509 == '0.3183099*lz11_amplitude/max(1e-15, lz11_sigma)'
+    lz12_amplitude: -1.84331885 (init = 0.05)
+    lz12_center:     1904.15218 (init = 1974.95)
+    lz12_sigma:      25.1640106 (init = 0.5)
+    lz12_fwhm:       50.3280211 == '2.0000000*lz12_sigma'
+    lz12_height:    -0.02331690 == '0.3183099*lz12_amplitude/max(1e-15, lz12_sigma)'
+    lz13_amplitude: -51.1281415 (init = 0.05)
+    lz13_center:     1970.92106 (init = 2009.251)
+    lz13_sigma:      164.275767 (init = 0.5)
+    lz13_fwhm:       328.551534 == '2.0000000*lz13_sigma'
+    lz13_height:    -0.09906874 == '0.3183099*lz13_amplitude/max(1e-15, lz13_sigma)'
+    lz14_amplitude: -0.39844059 (init = 0.05)
+    lz14_center:     2003.08625 (init = 2048.275)
+    lz14_sigma:      0.47268842 (init = 0.5)
+    lz14_fwhm:       0.94537683 == '2.0000000*lz14_sigma'
+    lz14_height:    -0.26831117 == '0.3183099*lz14_amplitude/max(1e-15, lz14_sigma)'
+    lz15_amplitude: -1.19308188 (init = 0.05)
+    lz15_center:     2078.38514 (init = 2118.527)
+    lz15_sigma:      17.1381325 (init = 0.5)
+    lz15_fwhm:       34.2762650 == '2.0000000*lz15_sigma'
+    lz15_height:    -0.02215934 == '0.3183099*lz15_amplitude/max(1e-15, lz15_sigma)'
+    lz16_amplitude: -0.40775426 (init = 0.05)
+    lz16_center:     2154.51371 (init = 2214.428)
+    lz16_sigma:      6.22700082 (init = 0.5)
+    lz16_fwhm:       12.4540016 == '2.0000000*lz16_sigma'
+    lz16_height:    -0.02084346 == '0.3183099*lz16_amplitude/max(1e-15, lz16_sigma)'
+    lz17_amplitude: -25.2482740 (init = 0.05)
+    lz17_center:     2254.68949 (init = 2285.604)
+    lz17_sigma:      152.126294 (init = 0.5)
+    lz17_fwhm:       304.252588 == '2.0000000*lz17_sigma'
+    lz17_height:    -0.05282963 == '0.3183099*lz17_amplitude/max(1e-15, lz17_sigma)'
+    lz18_amplitude: -0.18369176 (init = 0.05)
+    lz18_center:     2393.74752 (init = 2414.455)
+    lz18_sigma:      2.60416115 (init = 0.5)
+    lz18_fwhm:       5.20832230 == '2.0000000*lz18_sigma'
+    lz18_height:    -0.02245288 == '0.3183099*lz18_amplitude/max(1e-15, lz18_sigma)'
+    lz19_amplitude:  0.63627859 (init = 0.05)
+    lz19_center:     2436.35060 (init = 2442.29)
+    lz19_sigma:      11.5010806 (init = 0.5)
+    lz19_fwhm:       23.0021612 == '2.0000000*lz19_sigma'
+    lz19_height:     0.01760998 == '0.3183099*lz19_amplitude/max(1e-15, lz19_sigma)'
+    lz20_amplitude:  0.17777776 (init = 0.05)
+    lz20_center:     2521.29139 (init = 2520.624)
+    lz20_sigma:      1.14246452 (init = 0.5)
+    lz20_fwhm:       2.28492904 == '2.0000000*lz20_sigma'
+    lz20_height:     0.04953189 == '0.3183099*lz20_amplitude/max(1e-15, lz20_sigma)'
+    lz21_amplitude:  3.45244074 (init = 0.05)
+    lz21_center:     2649.29736 (init = 2561.779)
+    lz21_sigma:      8.69667032 (init = 0.5)
+    lz21_fwhm:       17.3933406 == '2.0000000*lz21_sigma'
+    lz21_height:     0.12636400 == '0.3183099*lz21_amplitude/max(1e-15, lz21_sigma)'
+    lz22_amplitude:  23.3732483 (init = 0.05)
+    lz22_center:     2670.29765 (init = 2595.909)
+    lz22_sigma:      21.1864952 (init = 0.5)
+    lz22_fwhm:       42.3729903 == '2.0000000*lz22_sigma'
+    lz22_height:     0.35116409 == '0.3183099*lz22_amplitude/max(1e-15, lz22_sigma)'
+    lz23_amplitude:  19.9453073 (init = 0.05)
+    lz23_center:     2865.50072 (init = 2670.473)
+    lz23_sigma:      149.368770 (init = 0.5)
+    lz23_fwhm:       298.737539 == '2.0000000*lz23_sigma'
+    lz23_height:     0.04250412 == '0.3183099*lz23_amplitude/max(1e-15, lz23_sigma)'
+    lz24_amplitude:  0.44949989 (init = 0.05)
+    lz24_center:     2844.28571 (init = 2848.3)
+    lz24_sigma:      6.60244226 (init = 0.5)
+    lz24_fwhm:       13.2048845 == '2.0000000*lz24_sigma'
+    lz24_height:     0.02167081 == '0.3183099*lz24_amplitude/max(1e-15, lz24_sigma)'
+    lz25_amplitude:  2.15271478 (init = 0.05)
+    lz25_center:     2906.18002 (init = 2909.579)
+    lz25_sigma:      11.4463845 (init = 0.5)
+    lz25_fwhm:       22.8927691 == '2.0000000*lz25_sigma'
+    lz25_height:     0.05986436 == '0.3183099*lz25_amplitude/max(1e-15, lz25_sigma)'
+    lz26_amplitude:  0.66815562 (init = 0.05)
+    lz26_center:     2964.81573 (init = 2968.207)
+    lz26_sigma:      8.06034491 (init = 0.5)
+    lz26_fwhm:       16.1206898 == '2.0000000*lz26_sigma'
+    lz26_height:     0.02638604 == '0.3183099*lz26_amplitude/max(1e-15, lz26_sigma)'
+    lz27_amplitude: -0.11227179 (init = 0.05)
+    lz27_center:     3196.98264 (init = 3183.586)
+    lz27_sigma:      1.22499914 (init = 0.5)
+    lz27_fwhm:       2.44999827 == '2.0000000*lz27_sigma'
+    lz27_height:    -0.02917326 == '0.3183099*lz27_amplitude/max(1e-15, lz27_sigma)'
+    lz28_amplitude: -0.14944679 (init = 0.05)
+    lz28_center:     3224.38655 (init = 3225.516)
+    lz28_sigma:      1.3201e-12 (init = 0.5)
+    lz28_fwhm:       2.6401e-12 == '2.0000000*lz28_sigma'
+    lz28_height:    -3.6037e+10 == '0.3183099*lz28_amplitude/max(1e-15, lz28_sigma)'
+    lz29_amplitude: -48.2859691 (init = 0.05)
+    lz29_center:     3454.70924 (init = 3314.878)
+    lz29_sigma:      228.735302 (init = 0.5)
+    lz29_fwhm:       457.470604 == '2.0000000*lz29_sigma'
+    lz29_height:    -0.06719515 == '0.3183099*lz29_amplitude/max(1e-15, lz29_sigma)'

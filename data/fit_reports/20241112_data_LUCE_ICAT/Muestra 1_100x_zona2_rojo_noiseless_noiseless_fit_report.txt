@@ -1,0 +1,17 @@
+[[Model]]
+    Model(linear, prefix='bkg_')
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 7
+    # data points      = 1060
+    # variables        = 2
+    chi-square         = 0.11503497
+    reduced chi-square = 1.0873e-04
+    Akaike info crit   = -9672.25587
+    Bayesian info crit = -9662.32383
+    R-squared          = 0.29351596
+[[Variables]]
+    bkg_slope:      9.3223e-06 +/- 4.4465e-07 (4.77%) (init = 1)
+    bkg_intercept:  0.13144689 +/- 0.00107817 (0.82%) (init = 0)
+[[Correlations]] (unreported correlations are < 0.500)
+    C(bkg_slope, bkg_intercept) = -0.9549
