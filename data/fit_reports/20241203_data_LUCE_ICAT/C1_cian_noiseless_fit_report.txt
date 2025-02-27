@@ -1,0 +1,39 @@
+[[Model]]
+    ((Model(linear, prefix='bkg_') + Model(lorentzian, prefix='lz1_')) + Model(lorentzian, prefix='lz2_'))
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 318
+    # data points      = 1061
+    # variables        = 8
+    chi-square         = 0.03193998
+    reduced chi-square = 3.0332e-05
+    Akaike info crit   = -11029.9267
+    Bayesian info crit = -10990.1910
+    R-squared          = 0.99099076
+[[Variables]]
+    bkg_slope:     -3.6974e-05 +/- 9.1194e-06 (24.66%) (init = 1)
+    bkg_intercept: -0.27362970 +/- 0.02100513 (7.68%) (init = 0)
+    lz1_amplitude:  69.9630419 +/- 6.02564736 (8.61%) (init = 0.05)
+    lz1_center:     1438.25149 +/- 5.22672073 (0.36%) (init = 1591.449)
+    lz1_sigma:      326.942098 +/- 15.7983326 (4.83%) (init = 0.5)
+    lz1_fwhm:       653.884195 +/- 31.5966651 (4.83%) == '2.0000000*lz1_sigma'
+    lz1_height:     0.06811582 +/- 0.00276984 (4.07%) == '0.3183099*lz1_amplitude/max(1e-15, lz1_sigma)'
+    lz2_amplitude:  3414.59117 +/- 406.066191 (11.89%) (init = 0.05)
+    lz2_center:     2884.59286 +/- 27.9746913 (0.97%) (init = 2669.283)
+    lz2_sigma:      1813.65667 +/- 75.8354931 (4.18%) (init = 0.5)
+    lz2_fwhm:       3627.31335 +/- 151.670986 (4.18%) == '2.0000000*lz2_sigma'
+    lz2_height:     0.59928552 +/- 0.04638718 (7.74%) == '0.3183099*lz2_amplitude/max(1e-15, lz2_sigma)'
+[[Correlations]] (unreported correlations are < 0.500)
+    C(bkg_slope, lz2_center)        = -0.9958
+    C(lz2_amplitude, lz2_sigma)     = +0.9954
+    C(lz2_amplitude, lz2_center)    = +0.9809
+    C(bkg_slope, lz2_amplitude)     = -0.9794
+    C(lz1_amplitude, lz1_sigma)     = +0.9730
+    C(bkg_intercept, lz2_amplitude) = -0.9695
+    C(bkg_slope, lz2_sigma)         = -0.9669
+    C(lz2_center, lz2_sigma)        = +0.9663
+    C(bkg_intercept, lz2_sigma)     = -0.9641
+    C(bkg_intercept, lz2_center)    = -0.9173
+    C(bkg_slope, bkg_intercept)     = +0.9052
+    C(bkg_slope, lz1_amplitude)     = +0.5504
+    C(lz1_amplitude, lz2_sigma)     = -0.5310

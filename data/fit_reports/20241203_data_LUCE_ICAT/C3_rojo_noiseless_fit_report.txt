@@ -1,0 +1,21 @@
+[[Model]]
+    (Model(linear, prefix='bkg_') + Model(lorentzian, prefix='lz1_'))
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 12000
+    # data points      = 1061
+    # variables        = 5
+    chi-square         = 0.01148852
+    reduced chi-square = 1.0879e-05
+    Akaike info crit   = -12120.8100
+    Bayesian info crit = -12095.9752
+    R-squared          = 0.97979333
+##  Warning: uncertainties could not be estimated:
+[[Variables]]
+    bkg_slope:     -8.3796e-04 (init = 1)
+    bkg_intercept: -9.40536783 (init = 0)
+    lz1_amplitude:  396981.543 (init = 0.05)
+    lz1_center:     6151.73886 (init = 2336.109)
+    lz1_sigma:      9499.84797 (init = 0.5)
+    lz1_fwhm:       18999.6959 == '2.0000000*lz1_sigma'
+    lz1_height:     13.3015976 == '0.3183099*lz1_amplitude/max(1e-15, lz1_sigma)'

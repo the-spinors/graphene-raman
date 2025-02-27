@@ -1,0 +1,51 @@
+[[Model]]
+    (((Model(linear, prefix='bkg_') + Model(lorentzian, prefix='lz1_')) + Model(lorentzian, prefix='lz2_')) + Model(lorentzian, prefix='lz3_'))
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 416
+    # data points      = 1061
+    # variables        = 11
+    chi-square         = 0.27882804
+    reduced chi-square = 2.6555e-04
+    Akaike info crit   = -8725.01894
+    Bayesian info crit = -8670.38230
+    R-squared          = 0.92840052
+[[Variables]]
+    bkg_slope:      4.0168e-05 +/- 1.3828e-05 (34.43%) (init = 1)
+    bkg_intercept: -0.26783285 +/- 0.02771082 (10.35%) (init = 0)
+    lz1_amplitude:  324.524546 +/- 36.7883111 (11.34%) (init = 0.05)
+    lz1_center:     1413.40498 +/- 7.12257467 (0.50%) (init = 1338.09)
+    lz1_sigma:      409.636568 +/- 22.7698035 (5.56%) (init = 0.5)
+    lz1_fwhm:       819.273136 +/- 45.5396071 (5.56%) == '2.0000000*lz1_sigma'
+    lz1_height:     0.25217323 +/- 0.01523962 (6.04%) == '0.3183099*lz1_amplitude/max(1e-15, lz1_sigma)'
+    lz2_amplitude:  23.7530373 +/- 12.2550736 (51.59%) (init = 0.05)
+    lz2_center:     2123.02041 +/- 15.7867471 (0.74%) (init = 1591.449)
+    lz2_sigma:      208.788321 +/- 58.5071669 (28.02%) (init = 0.5)
+    lz2_fwhm:       417.576642 +/- 117.014334 (28.02%) == '2.0000000*lz2_sigma'
+    lz2_height:     0.03621288 +/- 0.00942015 (26.01%) == '0.3183099*lz2_amplitude/max(1e-15, lz2_sigma)'
+    lz3_amplitude:  1233.72460 +/- 264.589886 (21.45%) (init = 0.05)
+    lz3_center:     2834.01766 +/- 16.6411549 (0.59%) (init = 2884.436)
+    lz3_sigma:      1000.93528 +/- 101.258380 (10.12%) (init = 0.5)
+    lz3_fwhm:       2001.87056 +/- 202.516761 (10.12%) == '2.0000000*lz3_sigma'
+    lz3_height:     0.39233981 +/- 0.04500017 (11.47%) == '0.3183099*lz3_amplitude/max(1e-15, lz3_sigma)'
+[[Correlations]] (unreported correlations are < 0.500)
+    C(lz3_amplitude, lz3_sigma)     = +0.9927
+    C(lz1_amplitude, lz1_sigma)     = +0.9751
+    C(lz2_amplitude, lz2_sigma)     = +0.9581
+    C(bkg_intercept, lz1_center)    = +0.8696
+    C(bkg_slope, lz3_sigma)         = -0.8559
+    C(lz2_amplitude, lz3_sigma)     = -0.8464
+    C(bkg_slope, lz3_amplitude)     = -0.8418
+    C(bkg_intercept, lz1_amplitude) = -0.8375
+    C(bkg_intercept, lz1_sigma)     = -0.8254
+    C(lz2_amplitude, lz3_amplitude) = -0.8142
+    C(lz2_sigma, lz3_sigma)         = -0.7291
+    C(lz2_sigma, lz3_amplitude)     = -0.7041
+    C(bkg_slope, lz3_center)        = -0.6974
+    C(lz1_amplitude, lz1_center)    = -0.6638
+    C(bkg_slope, lz2_amplitude)     = +0.6358
+    C(lz1_center, lz1_sigma)        = -0.6308
+    C(bkg_slope, lz1_amplitude)     = +0.5954
+    C(bkg_slope, lz1_sigma)         = +0.5369
+    C(lz3_amplitude, lz3_center)    = +0.5116
+    C(bkg_slope, lz2_sigma)         = +0.5084

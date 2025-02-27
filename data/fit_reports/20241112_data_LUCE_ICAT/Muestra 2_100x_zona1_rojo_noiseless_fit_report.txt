@@ -1,0 +1,31 @@
+[[Model]]
+    ((Model(linear, prefix='bkg_') + Model(lorentzian, prefix='lz1_')) + Model(lorentzian, prefix='lz2_'))
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 146
+    # data points      = 1060
+    # variables        = 8
+    chi-square         = 3.08040440
+    reduced chi-square = 0.00292814
+    Akaike info crit   = -6175.42110
+    Bayesian info crit = -6135.69290
+    R-squared          = 0.50123325
+[[Variables]]
+    bkg_slope:     -4.5791e-05 +/- 1.6278e-04 (355.49%) (init = 1)
+    bkg_intercept:  0.15688319 +/- 1.54882357 (987.25%) (init = 0)
+    lz1_amplitude:  20.0640420 +/- 3.2923e+10 (164091760347.23%) (init = 0.05)
+    lz1_center:    -5136.35274 +/- 1.6280e+10 (316960784.19%) (init = 1574.938)
+    lz1_sigma:      0.13769589 +/- 1.7961e+09 (1304377294828.18%) (init = 0.5)
+    lz1_fwhm:       0.27539177 +/- 3.5921e+09 (1304377290728.18%) == '2.0000000*lz1_sigma'
+    lz1_height:     46.3818009 +/- 5.2889e+11 (1140288361026.81%) == '0.3183099*lz1_amplitude/max(1e-15, lz1_sigma)'
+    lz2_amplitude:  25.8222455 +/- 1.47318370 (5.71%) (init = 0.05)
+    lz2_center:     2682.26861 +/- 0.95452345 (0.04%) (init = 2681.708)
+    lz2_sigma:      19.3416516 +/- 1.45141373 (7.50%) (init = 0.5)
+    lz2_fwhm:       38.6833032 +/- 2.90282746 (7.50%) == '2.0000000*lz2_sigma'
+    lz2_height:     0.42496249 +/- 0.02082900 (4.90%) == '0.3183099*lz2_amplitude/max(1e-15, lz2_sigma)'
+[[Correlations]] (unreported correlations are < 0.500)
+    C(lz1_amplitude, lz1_sigma)  = +1.0000
+    C(bkg_slope, bkg_intercept)  = -0.9991
+    C(bkg_intercept, lz1_center) = +0.9977
+    C(bkg_slope, lz1_center)     = -0.9940
+    C(lz2_amplitude, lz2_sigma)  = +0.7572
